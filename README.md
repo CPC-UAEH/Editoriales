@@ -1,112 +1,146 @@
-# CPC_UAEH
+<div align="center">
+  <img src="https://raw.githubusercontent.com/CPC-UAEH/Editoriales/main/Recursos/logoCPC.png" alt="Logo del Club de Programación Competitiva de la UAEH" width="180">
 
-Repositorio oficial de documentación del **Club de Programación Competitiva (CPC)** de la **Universidad Autónoma del Estado de Hidalgo (UAEH)**.
-https://cpcjudge.com/
+# Editoriales CPC · UAEH
 
-![Imagen](Recursos/logoCPC.png)
+  **Análisis detallado y soluciones de problemas de programación competitiva.**
 
-## Descripción
+  <p>
+    <a href="https://cpcjudge.com/"><img src="https://img.shields.io/badge/CPC%20Judge-practica-111827?style=for-the-badge" alt="CPC Judge"></a>
+    <a href="https://github.com/CPC-UAEH/Editoriales"><img src="https://img.shields.io/github/last-commit/CPC-UAEH/Editoriales?style=for-the-badge&label=actualizado" alt="Última actualización"></a>
+    <a href="https://github.com/CPC-UAEH/Editoriales/issues"><img src="https://img.shields.io/github/issues/CPC-UAEH/Editoriales?style=for-the-badge&label=issues" alt="Issues abiertas"></a>
+    <a href="https://github.com/CPC-UAEH/Editoriales/graphs/contributors"><img src="https://img.shields.io/github/contributors/CPC-UAEH/Editoriales?style=for-the-badge&label=contribuidores" alt="Contribuidores"></a>
+    <a href="./LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY--SA%204.0-lightgrey?style=for-the-badge" alt="Licencia"></a>
+  </p>
 
-CPC_UAEH es una colección de documentación técnica sobre problemas de programación competitiva. Cada documento describe el análisis, razonamiento y solución de un problema específico, incluyendo implementaciones de referencia cuando es necesario.
+  <p>
+    <a href="#contenido">Contenido</a> ·
+    <a href="#cómo-aprender-con-este-material">Cómo aprender</a> ·
+    <a href="#contribuir">Contribuir</a> ·
+    <a href="#autoría-y-mantenimiento">Autoría</a>
+  </p>
+</div>
 
-El objetivo principal de este repositorio es preservar el conocimiento generado dentro del club y servir como material de consulta para futuros participantes.
+## Sobre el proyecto
 
-La programación competitiva suele involucrar problemas cuya solución no es evidente de manera intuitiva. Muchas veces, comprender el enfoque correcto requiere conocer algoritmos, estructuras de datos o técnicas específicas. Este repositorio busca reducir esa barrera proporcionando explicaciones accesibles y documentadas.
+Este repositorio reúne editoriales, análisis de complejidad, propuestas de solución e implementaciones de referencia para problemas de programación competitiva resueltos por el **Club de Programación Competitiva de la UAEH**.
 
-## Motivación
+El objetivo es construir una colección de material técnico en español que acompañe a los alumnos durante las sesiones de entrenamiento y la preparación para competencias. El contenido prioriza el razonamiento detrás de los algoritmos sobre la memorización de soluciones.
 
-A medida que los miembros del club adquieren experiencia resolviendo problemas, se genera una gran cantidad de conocimiento técnico que puede perderse con el tiempo.
-
-Este repositorio fue desarrollado para:
-
-* Preservar soluciones y conocimientos adquiridos por los integrantes del club.
-* Facilitar el aprendizaje de nuevos miembros.
-* Proporcionar una referencia permanente para problemas previamente resueltos.
-* Evitar la dependencia de una sola persona para explicar una solución.
-* Crear una base de conocimiento reutilizable para futuras generaciones del CPC.
+> **Recomendación:** intenta resolver cada problema antes de consultar su editorial.
 
 ## Contenido
 
-El repositorio está organizado en carpetas según el año, evento, concurso o temática correspondiente.
+El material se organiza por año y evento.
 
-![Imagen](Recursos/Imagen1.png)
+### 2025
 
-![Imagen](Recursos/Imagen.png)
+- [Campamento Otoño 2025](./2025/Campamento_Otonio_2025/campamento-otono-2025.md)
 
-Cada archivo Markdown puede incluir:
+### 2026
 
-- Link al problema en la página.
-- Descripción del ploblema.
-- Entradas.
-- Salidas.
-- Ejemplos.
-    - Entradas.
-    - Salidas.
-- Notas.
-- Temas identificados.
-    -Programación.
-    -Matematicas.
-- Propuesta de solución.
-- Implementación.
-    - Diagrama de flujo
-    - Codigo.
-        - C++20.
-        - Java.
-        - Kotlin.
-        - Python.
+- [Campamento Primavera 2026](./2026/Campamento_Primavera_2026/campamento-primavera-2026.md)
+- [OFMI 2026](./2026/OFMI_2026/ofmi-2026.md)
 
-## Lenguajes Utilizados
+Para crear material de un nuevo evento, consulta la [plantilla de editoriales](./template/README.md).
 
-Las soluciones documentadas pueden encontrarse en distintos lenguajes de programación, incluyendo:
-- C++
-- Java
-- Kotlin
-- Python
+## Cómo aprender con este material
 
-## Uso
+Las editoriales siguen este proceso:
 
-Este repositorio no corresponde a una aplicación ejecutable.
-Los documentos están escritos en formato Markdown (`.md`) y pueden consultarse directamente desde GitHub o mediante cualquier visor compatible con Markdown.
+```text
+Problema → Observaciones → Restricciones → Idea → Algoritmo → Complejidad → Implementación
+```
 
-Cuando una solución incluye código fuente, este puede copiarse y ejecutarse en el entorno correspondiente:
+Las editoriales no muestran únicamente una solución. Documentan las observaciones y decisiones que permiten llegar a ella.
 
-- IDEs para C++
-- IDEs para Java
-- IDEs para Kotlin
-- IDEs para Python
+### Contenido de una editorial
 
-La forma de compilación o ejecución dependerá del lenguaje utilizado en cada problema.
+Cada editorial incluye:
 
-La entrada y salida de datos están preparadas para el juez virtual.
+- **Descripción:** enunciado con variables matemáticas en formato LaTeX
+- **Entrada/Salida:** formato y restricciones
+- **Ejemplos:** casos de prueba
+- **Temas identificados:** técnicas de programación y conceptos matemáticos
+- **Propuesta de solución:** modelado y estrategia general
+- **Restricciones:** análisis de límites y complejidad requerida
+- **Estados/Estructura:** definición de estados DP o estructuras de datos
+- **Casos base:** casos iniciales y justificación
+- **Transiciones:** algoritmo paso a paso con diagramas Mermaid
+- **Correctitud:** argumento de por qué el algoritmo es correcto
+- **Complejidad:** análisis de tiempo y memoria
+- **Implementación:** código fuente en C++, Java, Kotlin, Python
+- **Casos límite:** edge cases y resultados esperados
 
-## Contribuciones
+Para practicar los problemas, visita [CPC Judge](https://cpcjudge.com/).
 
-Las contribuciones de miembros del CPC son bienvenidas.
+## Contribuir
 
-Al agregar documentación nueva se recomienda:
+Las contribuciones son bienvenidas. Puedes ayudar con:
 
-1. Explicar claramente la idea principal de la solución.
-2. Justificar el algoritmo utilizado.
-3. Incluir análisis de complejidad cuando sea relevante.
-4. Mantener un formato consistente con el resto del repositorio.
-5. Verificar que el código incluido sea correcto, legible y validado por el juez virtual de cpcjudge.
+- correcciones de errores o de redacción;
+- nuevas editoriales de problemas;
+- ejemplos adicionales o implementaciones en otros lenguajes;
+- propuestas de problemas o concursos;
+- revisión de Pull Requests existentes.
 
-## Participantes
+Consulta las [reglas para contribuir](./.github/CONTRIBUTING.md) y el
+[Código de Conducta](./.github/CODE_OF_CONDUCT.md) antes de participar.
 
-- [@gomae19](https://github.com/gomae19)
-- [@jordansosa1](https://github.com/jordansosa1)
-- [@edcrvl](https://github.com/edcrvl)
-- [@Kaarlarax](https://github.com/kaarlarax)
+### Flujo recomendado
 
-## Sobre el Club
+1. Revisa los [issues abiertos](https://github.com/CPC-UAEH/Editoriales/issues) o crea uno nuevo.
+2. Haz un fork del repositorio y crea una rama descriptiva:
 
-El Club de Programación Competitiva (CPC) de la Universidad Autónoma del Estado de Hidalgo es una comunidad dedicada al estudio de algoritmos, estructuras de datos y resolución de problemas de programación competitiva.
+   ```bash
+   git checkout -b editorial/nombre-problema
+   ```
 
-Este repositorio forma parte del esfuerzo del club por documentar y compartir conocimiento entre sus integrantes.
+3. Copia la plantilla y realiza tus cambios:
 
-Además contamos con un canal de YouTube (https://www.youtube.com/@yearzero4486) donde explicamos teoría y resolvemos problemas, como complemento a este repositorio
+   ```bash
+   cp -r template/periodo-academico año/nombre-evento/
+   ```
+
+4. Usa commits claros, por ejemplo:
+
+   ```text
+   docs: agregar editorial del problema X
+   docs: mejorar análisis de complejidad
+   fix: corregir implementación en C++
+   ```
+
+5. Abre un Pull Request explicando qué cambiaste y por qué.
+
+Para cambios pequeños de documentación, también puedes abrir directamente un Pull Request desde GitHub.
+
+## Autoría y mantenimiento
+
+Este proyecto es mantenido de forma colaborativa por **KaarLarax**, el [Club de Programación Competitiva de la UAEH](https://github.com/CPC-UAEH) y todas las personas que han contribuido al repositorio.
+
+- **Mantenimiento:** [KaarLarax](https://github.com/KaarLarax), en coordinación con el [Club de Programación Competitiva de la UAEH](https://github.com/CPC-UAEH)
+- **Contribuciones:** todas las personas que han aportado contenido, correcciones, ideas o revisiones
+- **Práctica de problemas:** [CPC Judge](https://cpcjudge.com/)
+- **Canal de YouTube:** [Year Zero](https://www.youtube.com/@yearzero4486)
+
+## Contribuidores
+
+Gracias a todas las personas que ayudan a mejorar este material.
+
+<div align="center">
+  <a href="https://github.com/CPC-UAEH/Editoriales/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=CPC-UAEH/Editoriales" alt="Contribuidores del repositorio">
+  </a>
+</div>
+
+La imagen se actualiza automáticamente con los contribuidores registrados en GitHub. También puedes consultar la [lista completa de contribuidores](https://github.com/CPC-UAEH/Editoriales/graphs/contributors).
 
 ## Licencia
 
-Salvo que se indique lo contrario, el contenido de este repositorio tiene fines educativos y académicos, sin ánimos de lucro.
+Este repositorio está bajo la licencia [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](./LICENSE). Puedes reutilizar, adaptar y compartir el material siempre que otorgues atribución y distribuyas las obras derivadas bajo la misma licencia.
+
+## Reconocimientos
+
+Material desarrollado como apoyo para las actividades del **Club de Programación Competitiva de la UAEH**.
+
 

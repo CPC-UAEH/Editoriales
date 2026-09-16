@@ -1,0 +1,9 @@
+# Configuration for welcome - https://github.com/behaviorbot/welcome
+
+# Configuration for new-issue-welcome - https://github.com/behaviorbot/new-issue-welcome
+newIssueWelcomeComment: >
+  Gracias por abrir este issue para las Editoriales del Club de Programación Competitiva de la UAEH. Una persona mantenedora lo revisará pronto. Mientras tanto, consulta las [reglas para contribuir](https://github.com/CPC-UAEH/Editoriales/blob/main/.github/CONTRIBUTING.md) y el [código de conducta](https://github.com/CPC-UAEH/Editoriales/blob/main/.github/CODE_OF_CONDUCT.md).
+
+# Configuration for new-pr-welcome - https://github.com/behaviorbot/new-pr-welcome
+newPRWelcomeComment: >
+  Gracias por tu primera Pull Request para las Editoriales del Club de Programación Competitiva de la UAEH. Revisaremos tus cambios pronto. Consulta las [reglas para contribuir](https://github.com/CPC-UAEH/Editoriales/blob/main/.github/CONTRIBUTING.md) y verifica la lista de comprobación de la Pull Request.

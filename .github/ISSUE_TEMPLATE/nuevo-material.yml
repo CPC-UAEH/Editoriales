@@ -1,0 +1,38 @@
+name: Propuesta de nuevo concurso
+description: Propón documentar las editoriales de un concurso o evento de programación competitiva.
+title: "[Concurso]: "
+labels:
+  - propuesta
+body:
+  - type: input
+    id: concurso
+    attributes:
+      label: Concurso propuesto
+      description: Indica el nombre del concurso, evento y año.
+      placeholder: Campamento Primavera 2027 - Concurso de Apertura
+    validations:
+      required: true
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción del concurso
+      description: Describe brevemente el concurso, número de problemas y nivel de dificultad.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problemas
+    attributes:
+      label: Problemas a documentar
+      description: Lista los problemas que se van a documentar con sus enlaces.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: conducta
+    attributes:
+      label: Código de Conducta
+      options:
+        - label: He leído y acepto el [Código de Conducta](https://github.com/CPC-UAEH/Editoriales/blob/main/.github/CODE_OF_CONDUCT.md).
+          required: true
