@@ -116,9 +116,18 @@ Para cambios pequeños de documentación, también puedes abrir directamente un 
 
 ## Autoría y mantenimiento
 
-Este proyecto es mantenido de forma colaborativa por **KaarLarax**, el [Club de Programación Competitiva de la UAEH](https://github.com/CPC-UAEH) y todas las personas que han contribuido al repositorio.
+Este proyecto es mantenido de forma colaborativa por el [Club de Programación Competitiva de la UAEH](https://github.com/CPC-UAEH) y todas las personas que han contribuido al repositorio.
 
-- **Mantenimiento:** [KaarLarax](https://github.com/KaarLarax), en coordinación con el [Club de Programación Competitiva de la UAEH](https://github.com/CPC-UAEH)
+### Mantenedores
+
+Los mantenedores son responsables de la revisión de Pull Requests y de coordinar las decisiones de contenido del repositorio.
+
+- [@jordansosa1](https://github.com/jordansosa1)
+- [@edcrvl](https://github.com/edcrvl)
+- [@KaarLarax](https://github.com/KaarLarax)
+
+### Enlaces
+
 - **Contribuciones:** todas las personas que han aportado contenido, correcciones, ideas o revisiones
 - **Práctica de problemas:** [CPC Judge](https://cpcjudge.com/)
 - **Canal de YouTube:** [Year Zero](https://www.youtube.com/@yearzero4486)
