@@ -1,0 +1,41 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+
+# Dependencias y compilación
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+*.log
+dist/
+build/
+.cache/
+
+# Archivos binarios y ejecutables
+*.o
+*.out
+*.exe
+*.class
+*.pyc
+__pycache__/
+
+# Temporales y locales
+*.tmp
+*.bak
+*.swp
+.env
+.env.local

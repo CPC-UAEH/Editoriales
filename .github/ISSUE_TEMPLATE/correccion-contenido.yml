@@ -1,0 +1,41 @@
+name: Corrección de contenido
+description: Reporta un error en una explicación, editorial, enlace o ejemplo.
+title: "[Corrección]: "
+labels:
+  - correccion
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por ayudar a mejorar el material. Busca primero si ya existe un issue similar.
+
+  - type: input
+    id: archivo
+    attributes:
+      label: Archivo o sección afectada
+      description: Indica la ruta del archivo y, si es posible, el número de línea.
+      placeholder: 2026/campamento-primavera/concurso-apertura/editoriales/problema.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: ¿Qué debe corregirse?
+      description: Explica el error y proporciona el texto actual y el texto sugerido.
+    validations:
+      required: true
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto adicional
+      description: Añade enlaces, ejemplos, fuentes o capturas relevantes.
+
+  - type: checkboxes
+    id: conducta
+    attributes:
+      label: Código de Conducta
+      options:
+        - label: He leído y acepto el [Código de Conducta](https://github.com/CPC-UAEH/Editoriales/blob/main/.github/CODE_OF_CONDUCT.md).
+          required: true

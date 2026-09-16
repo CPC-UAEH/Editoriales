@@ -1,0 +1,40 @@
+name: Propuesta de editorial
+description: Propón una editorial para un problema de programación competitiva.
+title: "[Editorial]: "
+labels:
+  - editorial
+body:
+  - type: input
+    id: problema
+    attributes:
+      label: Problema
+      description: Escribe el nombre y el enlace al problema.
+      placeholder: Gauss Suma - https://www.cpcjudge.com/problem/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea de la solución
+      description: Resume el algoritmo, la observación principal y la complejidad esperada.
+    validations:
+      required: true
+
+  - type: textarea
+    id: recursos
+    attributes:
+      label: Fuentes o recursos
+      description: Añade referencias y especifica si el material es original o adaptado.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Confirmaciones
+      options:
+        - label: La editorial será comprensible sin depender únicamente del código.
+          required: true
+        - label: Atribuiré correctamente las fuentes y contribuciones de otras personas.
+          required: true
+        - label: He leído y acepto el [Código de Conducta](https://github.com/CPC-UAEH/Editoriales/blob/main/.github/CODE_OF_CONDUCT.md).
+          required: true
