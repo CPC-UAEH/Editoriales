@@ -2,7 +2,11 @@
 
 **Autor:** [Autor del problema]
 
-**Link:** [URL del problema]
+**Link:** [Nombre del problema](https://codeforces.com)
+
+**Tiempo límite:** [límite de tiempo por prueba, ej. 1 s]
+
+**Memoria límite:** [límite de memoria por prueba, ej. 256 MB]
 
 ## Descripción
 
@@ -20,13 +24,15 @@ variables, por ejemplo: `$T$` (`$1 \leq T \leq 100$`).]
 
 ## Ejemplos
 
-### Ejemplo de entrada
+### Ejemplo 1
+
+#### Entrada
 
 ```text
 [Ejemplo de entrada]
 ```
 
-### Ejemplo de salida
+#### Salida
 
 ```text
 [Ejemplo de salida]

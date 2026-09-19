@@ -12,11 +12,11 @@
 
 ## Problemas
 
-| Letra | Problema | Autor | Dificultad | Link |
-|-------|----------|-------|------------|------|
-| A | [Problema A](./problemas/problema-a.md) | [Autor] | Básica | [Enlace](url) |
-| B | [Problema B](./problemas/problema-b.md) | [Autor] | Intermedia | [Enlace](url) |
-| C | [Problema C](./problemas/problema-c.md) | [Autor] | Avanzada | [Enlace](url) |
+| Letra | Problema | Dificultad | Link |
+| ------- | ---------- | ------------ | ------ |
+| A | [Problema A](./problemas/problema-a.md) | Básica | [Enlace](url) |
+| B | [Problema B](./problemas/problema-b.md) | Intermedia | [Enlace](url) |
+| C | [Problema C](./problemas/problema-c.md) | Avanzada | [Enlace](url) |
 
 ## Temas identificados
 

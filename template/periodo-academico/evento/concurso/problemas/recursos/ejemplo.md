@@ -13,15 +13,6 @@ Esta carpeta está destinada a almacenar imágenes, diagramas y otros recursos v
 - **Más fácil mantenimiento**: No necesitas hacer commit para actualizar imágenes
 - **Mejor colaboración**: Los contribuidores no necesitan clonar archivos binarios grandes
 
-### Servicios recomendados
-
-| Servicio | URL | Notas |
-|----------|-----|-------|
-| **Imgur** | https://imgur.com | Gratuito, sin registro requerido |
-| **ImgBB** | https://imgbb.com | Gratuito, permite álbumes |
-| **Postimages** | https://postimages.org | Gratuito, enlaces directos |
-| **GitHub Issues** | Subir a un issue y copiar URL | Usa la infraestructura de GitHub |
-
 ## Cómo usar URLs externas
 
 En tu archivo `problema.md`, usa la sintaxis estándar de Markdown:
@@ -57,7 +48,7 @@ Si decides usar archivos locales, sigue estas convenciones:
 
 ## Estructura de archivos locales
 
-```
+```text
 recursos/
 ├── problema-a-diagrama.png
 ├── problema-b-grafico.png
