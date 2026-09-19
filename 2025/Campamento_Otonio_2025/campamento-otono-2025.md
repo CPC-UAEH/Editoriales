@@ -15,18 +15,6 @@
 | [Concurso de Apertura](./concurso-apertura/concurso.md) | [Fecha] | Básica-Intermedia | [N] |
 | [Concurso de Cierre](./concurso-cierre/concurso.md) | [Fecha] | Intermedia-Avanzada | [N] |
 
-## Temas Cubiertos
-
-### Programación
-
-- [Técnica 1]
-- [Técnica 2]
-
-### Matemáticas
-
-- [Concepto 1]
-- [Concepto 2]
-
 ## Observaciones Generales
 
 - [Observación sobre el evento]
