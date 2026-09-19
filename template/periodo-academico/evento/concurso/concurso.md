@@ -18,17 +18,6 @@
 | B | [Problema B](./problemas/problema-b.md) | [Autor] | Intermedia | [Enlace](url) |
 | C | [Problema C](./problemas/problema-c.md) | [Autor] | Avanzada | [Enlace](url) |
 
-## Temas identificados
-
-### Programación
-
-- [Técnica o algoritmo principal]
-- [Otra técnica relevante]
-
-### Matemáticas
-
-- [Concepto matemático, si aplica]
-
 ## Observaciones generales
 
 - [Observación general sobre el concurso]
