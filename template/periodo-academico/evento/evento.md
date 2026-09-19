@@ -11,7 +11,7 @@
 ## Concursos
 
 | Concurso | Fecha | Dificultad | Problemas |
-|----------|-------|------------|-----------|
+| ---------- | ------- | ------------ | ----------- |
 | [Concurso de Apertura](./concurso-apertura/concurso.md) | [Fecha] | Básica-Intermedia | [N] |
 | [Concurso de Cierre](./concurso-cierre/concurso.md) | [Fecha] | Intermedia-Avanzada | [N] |
 
