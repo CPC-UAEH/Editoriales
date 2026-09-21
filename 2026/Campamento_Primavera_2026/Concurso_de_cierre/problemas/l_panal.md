@@ -1,4 +1,4 @@
-URL: https://www.cpcjudge.com/problem/panal
+https://www.cpcjudge.com/problem/panal
 
 # L. Panal
 
