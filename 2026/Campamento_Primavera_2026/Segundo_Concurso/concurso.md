@@ -1,6 +1,6 @@
 # Campamento Privamera 2026. Segundo Concurso
 
-**Autor:** Jordan
+**Autor:** CPC UAEH
 
 **Fecha:** 3 de Junio de 2026
 
