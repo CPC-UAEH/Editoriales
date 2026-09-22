@@ -1,4 +1,4 @@
-https://www.cpcjudge.com/problem/
+https://www.cpcjudge.com/problem/diosnoshaabandonado
 
 # 26P1D2. dios nos ha abandonado
 #### Autor: xenredda

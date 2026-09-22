@@ -1,4 +1,3 @@
-
 https://www.cpcjudge.com/problem/plantita
 
 # 26P2D1. Plantita
