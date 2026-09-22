@@ -1,6 +1,6 @@
 # Campamento Privamera 2026. Segundo Concurso
 
-**Autor:** Jordan
+**Autor:** Club de Programación Competitiva UAEH
 
 **Fecha:** 3 de Junio de 2026
 

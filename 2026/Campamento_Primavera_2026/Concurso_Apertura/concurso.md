@@ -1,6 +1,6 @@
 # Campamento Primavera 2026. Concurso de Apertura
 
-**Autor:** Jordan
+**Autor:** Club de Programación Competitiva UAEH
 
 **Fecha:** 1 de Junio de 2026
 
