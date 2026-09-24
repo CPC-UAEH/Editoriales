@@ -41,7 +41,7 @@ El material se organiza por año y evento.
 
 - [Campamento Primavera 2026](./2026/Campamento_Primavera_2026/campamento-primavera-2026.md)
 - [OFMI 2026](./2026/OFMI_2026/ofmi-2026.md) 
-- [Repechaje ICPC 2026](./2026\ICPC_GP_MX_2026\Repechaje\Repechaje.md)
+- [Repechaje ICPC 2026](./2026/ICPC_GP_MX_2026/Repechaje/Repechaje.md)
 
 Para crear material de un nuevo evento, consulta la [plantilla de editoriales](./template/README.md).
 
