@@ -62,37 +62,23 @@ Print a single integer: the maximum profit the merchant can achieve.
 
 ### Programación
 
-- [Técnica o algoritmo]
+- Ciclos
 
 ### Matemáticas
 
-- [Concepto matemático, si aplica]
+- Máximos y mínimos
 
 ## Propuesta de solución
 
-**Autor de la propuesta:** [Autor de la propuesta]
+**Autor de la propuesta:** Jordan
 
-Explica cómo modelar el problema y por qué la estrategia funciona.
+El mercader busca comprar la madera de ébano al menor precio posible para venderla con la mayor ganancia posible.
+
+La mayor ganancia posible se puede obtener al restar el producto más caro con el más barato.
 
 ## Observaciones
 
-- [Observación clave del problema]
-
-## Restricciones
-
-[Relaciona los límites de entrada con la complejidad necesaria y justifica las
-estructuras de datos elegidas.]
-
-## Estados o estructura de la solución
-
-[Define los estados, variables o estructuras principales. Si es programación
-dinámica, explica qué representa cada estado y sus transiciones.]
-
-![Diagrama o imagen](../recursos/nombre-de-imagen.png)
-
-## Casos base
-
-[Indica los casos base y explica por qué son correctos.]
+- Encuentra el elemento más grande y el más pequeño, para restar el mayor menos el menor.
 
 ## Transiciones o algoritmo
 
@@ -100,31 +86,59 @@ dinámica, explica qué representa cada estado y sus transiciones.]
 
 ```mermaid
 flowchart LR
-    A[Estado inicial] --> B[Transición]
-    B --> C[Estado siguiente]
+    A((Inicio)) --> B[mini = INT_MAX
+    maxi = 0]
+    B --> C[/n/]
+    C --> D{{Desde i = 0
+		Hasta i < n
+		Incremento 1}}
+    D --> E[/p_i/]
+    E --> F("mini = min(mini, a);
+        maxi = max(maxi, a);")
+    F --> G[\maxi - mini\]
+    G --> I((Fin))
+
 ```
 
 ## Correctitud
 
-[Argumenta por qué el algoritmo genera todas las soluciones válidas y no
-cuenta ninguna solución más de una vez.]
+Mientras las entradas se leen, se identifica si el número entrante es menor que el número mínimo encontrado anteriormente, además de identificarse si el número es mayor que el número máximo encontrado anteriormente, por lo que siempre se asegura que se va a encontrar el número mayor y el número menor de las entradas dadas.
 
 ## Complejidad computacional
 
-- Tiempo: $O(?)$
-- Memoria: $O(?)$
+- Tiempo: $O(N)$
 
 ## Implementación
 
 ### C++
 
-**Autor de la implementación:** [Autor de la implementación]
+**Autor de la implementación:** Jordan
 
 ```cpp
-// Código de la solución.
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    cin.tie(0); ios::sync_with_stdio(0);
+
+    int mini = INT_MAX, maxi = 0;
+    int n;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        int a;
+        cin >> a;
+        mini = min(mini, a);
+        maxi = max(maxi, a);
+    }
+
+    cout << maxi - mini;
+
+    return 0;
+}
 ```
 
 ## Casos límite
 
-- [Caso límite y resultado esperado]
-- [Caso límite relacionado con las restricciones]
+- El número mayor que se da es ${10^9}$, INT_MAX es mayor que el número máximo dado.
+- El número menor que se da es 1, $0$ es menor que el número mínimo dado.
