@@ -163,7 +163,7 @@ Después, sort reorganiza los elementos utilizando $greater<int>()$, por lo que 
 
 ### C++
 
-**Autor de la implementación:** [Autor de la implementación]
+**Autor de la implementación:** mae
 
 ```cpp
 #include <bits/stdc++.h>
