@@ -95,7 +95,8 @@ flowchart LR
     D --> E[/p_i/]
     E --> F("mini = min(mini, a);
         maxi = max(maxi, a);")
-    F --> G[\maxi - mini\]
+    F --> D
+    D --> G[\maxi - mini\]
     G --> I((Fin))
 
 ```
@@ -126,10 +127,10 @@ int main() {
     int n;
     cin >> n;
     for (int i = 0; i < n; i++) {
-        int a;
-        cin >> a;
-        mini = min(mini, a);
-        maxi = max(maxi, a);
+        int p;
+        cin >> p;
+        mini = min(mini, p);
+        maxi = max(maxi, p);
     }
 
     cout << maxi - mini;
