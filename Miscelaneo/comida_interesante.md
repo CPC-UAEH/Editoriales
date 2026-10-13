@@ -61,69 +61,140 @@ Imprime $q$ enteros, uno por día. El $i-ésimo$ entero debe ser igual al númer
 
 ### Programación
 
-- [Técnica o algoritmo]
+- Ordenamiento
+- Busqueda binaria
+
 
 ### Matemáticas
 
-- [Concepto matemático, si aplica]
+- Desigualdades
+- Conteo
 
 ## Propuesta de solución
 
-**Autor de la propuesta:** [Autor de la propuesta]
+**Autor de la propuesta:** mae
 
-Explica cómo modelar el problema y por qué la estrategia funciona.
+Ordenar los precios de menor a mayor y utilizar una función de búsqueda binaria para encontrar la primera posición cuyo precio sea mayor que la cantidad de monedas disponibles. Esta posición indica cuántas tiendas permiten comprar una empanada.
 
 ## Observaciones
 
-- [Observación clave del problema]
+- Los precios deben ordenarse antes de aplicar la búsqueda binaria.
+- Se puede comprar una empanada si su precio es menor o igual que las monedas disponibles.
+- Las tiendas con precios repetidos se cuentan individualmente.
+- La búsqueda binaria encuentra la primera posición cuyo precio supera la cantidad disponible.
 
 ## Restricciones
 
-[Relaciona los límites de entrada con la complejidad necesaria y justifica las
-estructuras de datos elegidas.]
+Como $n,q \leq 10^5$, revisar todas las tiendas en cada consulta sería ineficiente. Por ello, se utiliza un arreglo estático de tamaño 100005 y búsqueda binaria. El tipo int es suficiente porque los valores no superan $(10^9)$.
 
 ## Estados o estructura de la solución
 
-[Define los estados, variables o estructuras principales. Si es programación
-dinámica, explica qué representa cada estado y sus transiciones.]
-
-![Diagrama o imagen](../recursos/nombre-de-imagen.png)
+- $n$: número de tiendas.
+- $a$: arreglo de precios ordenados.
+- $q$: número de consultas.
+- $k$: monedas disponibles.
+- $l$, r: límites del intervalo de búsqueda.
+- $m$: posición central.
+- $pos$: primera posición cuyo precio es mayor que k; si no existe, vale n.
 
 ## Casos base
 
-[Indica los casos base y explica por qué son correctos.]
+**Ninguna tienda accesible**: si todos los precios superan k, la respuesta es 0.
+
+**Todas las tiendas accesibles**: si ningún precio supera k, la respuesta es n.
+
+
 
 ## Transiciones o algoritmo
 
-[Explica paso a paso la transición entre estados o el algoritmo general.]
+Primero, se leen los precios de las empanadas y se ordenan de menor a mayor. Después, se lee el número de consultas y, para cada una, la cantidad de monedas disponibles $k$. Se aplica la búsqueda binaria calculando la posición central $m$. Si $a[m]$ es mayor que $k$, se guarda esa posición en $pos$ y se continúa buscando a la izquierda, en caso contrario, se busca a la derecha. Finalmente, se imprime $pos$, que representa la cantidad de tiendas donde se puede comprar una empanada.
 
 ```mermaid
 flowchart LR
-    A[Estado inicial] --> B[Transición]
-    B --> C[Estado siguiente]
+    A[Inicio] --> B[Leer precios]
+    B --> C[Ordenar precios]
+    C --> D[Leer k]
+    D --> E[Ejecutar búsqueda binaria]
+    E --> F[Obtener cantidad de tiendas]
+    F --> G[Imprimir respuesta]
+    G --> H{¿Quedan consultas?}
+    H -- Sí --> D
+    H -- No --> I[Fin]
 ```
 
 ## Correctitud
 
-[Argumenta por qué el algoritmo genera todas las soluciones válidas y no
-cuenta ninguna solución más de una vez.]
+El arreglo ordenado coloca primero los precios menores o iguales que k. La búsqueda binaria encuentra la primera posición cuyo precio es mayor que k. Por tanto, esa posición coincide con la cantidad de tiendas donde se puede comprar una empanada. Si no existe un precio mayor, la respuesta es n.
 
-## Complejidad computacional
-
-- Tiempo: $O(?)$
-- Memoria: $O(?)$
 
 ## Implementación
+El programa comienza leyendo el número de tiendas y almacenando los precios de las empanadas en el arreglo $a$. Después, utiliza la función `sort()` para ordenar los precios de menor a mayor. Luego, lee el número de consultas y, para cada una, obtiene la cantidad de monedas disponibles $k$ y llama a la función `busquedaBinaria()`. Esta función utiliza las variables $l$ y $r$ para definir los límites de búsqueda, y calcula m como la posición central del intervalo. Si el precio `a[m]` es mayor que $k$, guarda esa posición en $pos$ y continúa buscando a la izquierda; de lo contrario, busca a la derecha. Este proceso se repite hasta encontrar la primera posición cuyo precio sea mayor que la cantidad disponible. Finalmente, devuelve $pos$, que representa el número de tiendas donde se puede comprar una empanada, y el programa imprime el resultado de cada consulta.
 
 ### C++
 
-**Autor de la implementación:** [Autor de la implementación]
+**Autor de la implementación:** mae
 
 ```cpp
-// Código de la solución.
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int a[100005];
+
+int busquedaBinaria(int l, int r, int k);
+
+int main()
+{
+    cin.tie(0); ios::sync_with_stdio(false);
+
+    int n;
+    cin >> n;
+
+    for (int i = 0; i < n; i++){
+        cin >> a[i];
+    }
+
+    sort(a, a + n);
+
+    int q;
+    cin >> q;
+
+    while (q--){
+        int k;
+        cin >> k;
+        cout << busquedaBinaria(0, n - 1, k) << '\n';
+    }
+
+    return 0;
+}
+
+int busquedaBinaria(int l, int r, int k){
+    int m;
+    int pos = r + 1;
+
+    while (l <= r){
+        m = l + (r - l) / 2;
+
+        if (a[m] > k){
+            pos = m;
+            r = m - 1;
+        } else {
+            l = m + 1;
+        }
+    }
+
+    return pos;
+}
+
 ```
 
 ## Casos límite
 
-- [Caso límite y resultado esperado]
-- [Caso límite relacionado con las restricciones]
+- Todas las empanadas cuestan más que el dinero disponible.
+- Solo existe una tienda
+- Un precio coincide exactamente con las monedas: precios $(3, 5, 8)$, monedas $(5)$. Resultado: $2$.
+- Existen precios repetidos: precios $(2, 2, 2, 5)$, monedas $(2)$. Resultado: $3$.
+- La cantidad disponible es máxima: cualquier conjunto válido de precios y monedas $(10^9)$. Resultado: 
+$n$, ya que ningún precio puede superar $(10^9)$.
+- La cantidad disponible es menor que el precio mínimo: precios $(10, 20, 30)$, monedas $(1)$. Resultado: $0$.
