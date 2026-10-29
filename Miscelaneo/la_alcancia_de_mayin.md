@@ -182,6 +182,49 @@ int main()
     cout << total;
 }
 ```
+**Autor de la implementación:** mae
+
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    cin.tie(0);
+    ios_base::sync_with_stdio(false);
+
+    list<int> monedas;
+    int t;
+    cin >> t;
+
+    int total = 0;
+    char in;
+
+    for (int i = 0; i < t; i++) {
+        cin >> in;
+
+        int k;
+
+        if (in == 'M') {
+            cin >> k;
+            monedas.push_back(k);
+            total += k;
+
+        } else if (in == 'R' && !monedas.empty()) {
+            total -= monedas.back();
+            monedas.pop_back();
+
+        } else if (in == 'Q' && !monedas.empty()) {
+            cout << total << " " << monedas.back() << '\n';
+        }
+    }
+
+    cout << total << '\n';
+
+    return 0;
+}
+```
 
 ## Casos límite
 
